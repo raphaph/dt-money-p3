@@ -24,15 +24,19 @@ export const SearchFormContainer = styled.form`
 
     border: 0;
     padding: 1rem;
-    background: transparent;
-    border: 1px solid ${(props) => props.theme['green-300']};
-    color: ${(props) => props.theme['green-300']};
+    background: ${(props) => props.theme['green-500']};
+    color: ${(props) => props.theme.white};
     font-weight: bold;
     border-radius: 6px;
+    cursor: pointer;
 
-    &:hover {
-      background: ${(props) => props.theme['green-500']};
-      border-color: ${(props) => props.theme['green-500']};
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      background: ${(props) => props.theme['green-700']};
       color: ${(props) => props.theme.white};
       transition: background-color 0.2s, color 0.2s, border-color 0.2s;
     }
