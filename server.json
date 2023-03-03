@@ -55,6 +55,22 @@
       "type": "income",
       "createdAt": "2023-03-03T15:05:46.349Z",
       "id": 7
+    },
+    {
+      "description": "Desenvolvimento Web",
+      "price": 2000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2023-03-03T17:01:02.555Z",
+      "id": 8
+    },
+    {
+      "description": "Processador I9 9900K",
+      "price": 2099,
+      "category": "Compra",
+      "type": "outcome",
+      "createdAt": "2023-03-03T17:01:38.023Z",
+      "id": 9
     }
   ]
 }
