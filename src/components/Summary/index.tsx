@@ -21,10 +21,10 @@ export function Summary() {
         </header>
         <strong>{priceFormatter.format(summary.outcome)}</strong>
       </SummaryCard>
-      <SummaryCard variant="green">
+      <SummaryCard variant="lightgreen">
         <header>
-          <span>Entradas</span>
-          <CurrencyDollar size={32} color="#fff" />
+          <span>Saldo</span>
+          <CurrencyDollar size={32} color="#000" />
         </header>
         <strong>{priceFormatter.format(summary.total)}</strong>
       </SummaryCard>

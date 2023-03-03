@@ -1,8 +1,10 @@
-import { useContext } from 'react'
+import { useContextSelector } from 'use-context-selector'
 import { TransactionContext } from '../contexts/TransactionContext'
 
 export function useSummary() {
-  const { transactions } = useContext(TransactionContext)
+  const transactions = useContextSelector(TransactionContext, (context) => {
+    return context.transactions
+  })
   // transactions é utilizada apenas pelo reducer abaixo, entao faz sentido estar aqui
   const summary = transactions.reduce(
     (acc, transaction) => {

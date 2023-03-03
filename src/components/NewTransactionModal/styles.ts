@@ -17,7 +17,7 @@ export const Content = styled(Dialog.Content)`
   min-width: 32rem;
   border-radius: 6px;
   padding: 2.5rem 3rem;
-  background-color: ${(props) => props.theme['gray-800']};
+  background-color: ${(props) => props.theme['gray-100']};
 
   position: fixed;
   top: 50%;
@@ -33,8 +33,8 @@ export const Content = styled(Dialog.Content)`
     input {
       border-radius: 6px;
       border: 0;
-      background-color: ${(props) => props.theme['gray-900']};
-      color: ${(props) => props.theme['gray-300']};
+      background-color: ${(props) => props.theme['gray-300']};
+      color: black;
       padding: 1rem;
 
       &::placeholder {
@@ -45,7 +45,7 @@ export const Content = styled(Dialog.Content)`
     button {
       height: 58px;
       border: 0;
-      background: ${(props) => props.theme['green-500']};
+      background: #0aed91;
       color: ${(props) => props.theme.white};
       font-weight: bold;
       padding: 0 1.25rem;
@@ -87,7 +87,7 @@ export const TransactionType = styled(RadioGroup.Root)`
 export const TransactionTypeButton = styled(
   RadioGroup.Item,
 )<TransactionTypeButtonProps>`
-  background: ${(props) => props.theme['gray-700']} !important;
+  background: black !important;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@ export const TransactionTypeButton = styled(
   border-radius: 6px;
   cursor: pointer;
   border: 0;
-  color: ${(props) => props.theme['gray-300']};
+  color: black;
 
   svg {
     color: ${(props) =>

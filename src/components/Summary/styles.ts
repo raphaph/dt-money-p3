@@ -13,12 +13,13 @@ export const SummaryContainer = styled.section`
 `
 
 interface SummaryCardProps {
-  variant?: 'green' // caso o elemento receba a variant, o valor será greenm (não obrigatório)
+  variant?: 'lightgreen' // caso o elemento receba a variant, o valor será greenm (não obrigatório)
   // essa variant precisa ser passada no card variant="green"
 }
 
 export const SummaryCard = styled.div<SummaryCardProps>`
-  background-color: ${(props) => props.theme['gray-600']};
+  background-color: white;
+  box-shadow: 0 0 5px 2px ${(props) => props.theme['gray-300']};
   border-radius: 6px;
   padding: 2rem;
 
@@ -26,7 +27,7 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: ${(props) => props.theme['gray-300']};
+    color: black;
   }
 
   strong {
@@ -36,9 +37,9 @@ export const SummaryCard = styled.div<SummaryCardProps>`
   }
 
   ${(props) =>
-    props.variant === 'green' &&
+    props.variant === 'lightgreen' &&
     css`
       // se um card enviar a variant="green" será aplicado o style abaixo
-      background: ${props.theme['green-700']};
+      background: #0aed91;
     `}
 `

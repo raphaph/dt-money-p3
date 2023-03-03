@@ -9,13 +9,12 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus {
         outline: 0;
-        box-shadow: 0 0 0 2px ${(props) =>
-          props.theme['green-500']}// necessário tipagem para funcionar
+        box-shadow: 0 0 0 2px #ED8A79 // necessário tipagem para funcionar
     }
 
     body {
-        background-color: ${(props) => props.theme['gray-800']};
-        color: ${(props) => props.theme['gray-100']};
+        background-color: ${(props) => props.theme['gray-100']};
+        color: ${(props) => props.theme['gray-900']};
         -webkit-font-smoothing: antialiased;
     }
 
